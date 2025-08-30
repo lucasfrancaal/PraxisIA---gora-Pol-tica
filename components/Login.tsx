@@ -32,7 +32,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-4 relative">
       <div className="max-w-md w-full bg-gray-800 rounded-lg shadow-lg p-8">
         <div className="text-center mb-8">
           <div className="inline-block bg-indigo-600 p-3 rounded-full">
@@ -76,6 +76,9 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
             {isLoading ? 'Entrando...' : 'Entrar'}
           </button>
         </form>
+      </div>
+      <div className="absolute bottom-4 left-0 right-0 text-xs text-gray-500 text-center">
+        Copyright {new Date().getFullYear()}. Desenvolvido por Ágora Inteligência Política
       </div>
     </div>
   );
