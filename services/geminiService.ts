@@ -3,7 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 import { Message, ParsedGeminiResponse, Source, AnalysisSection } from '../types';
 import { SYSTEM_PROMPT } from '../constants';
 
-// FIX: Enforce API_KEY presence and use it for initialization, throwing an error if it's missing.
+// FIX: Per coding guidelines, the API key must be read from process.env.API_KEY.
+// This resolves the error about 'import.meta.env' not being defined.
 const API_KEY = process.env.API_KEY;
 if (!API_KEY) {
     throw new Error("A variável de ambiente API_KEY não está definida. As funcionalidades de IA não funcionarão.");
