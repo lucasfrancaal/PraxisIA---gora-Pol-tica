@@ -1,0 +1,5 @@
+{
+  "name": "Praxis AI Assistant",
+  "description": "An AI assistant specializing in praxeological analysis for public management, featuring user authentication and conversation history.",
+  "requestFramePermissions": []
+}
